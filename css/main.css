@@ -1,0 +1,31 @@
+#transtable{
+clear:both;
+width:100%;
+}
+
+#transtable tr.firstchild{
+background:red;
+}
+
+.even td{
+  background:#eee;
+}
+
+.odd td{
+  background:#ddd	;
+}
+
+#export ul li{
+display:inline-block;
+padding:3px;
+border: 1px solid blue;
+background: lightblue;
+width:100px;
+text-align:center;
+border-radius:1px;
+}
+
+.selector{
+  display:inline-block;
+  width:200px;
+}  

@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="js/DataTables-1.10.9/media/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="js/DataTables-1.10.9/media/js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="js/DataTables-1.10.9/media/js/jquery.dataTables.js"></script>
+
+<!-- data-->
+<script type="text/javascript" charset="utf8" src="js/util.js"></script>
+<script type="text/javascript" charset="utf8" src="js/datastore.js"></script>
+</head>
+<body>
+
+<div class="selector">
+  <p> Source language </p>
+  <select>
+    <option value=""> Arabic  </option>
+    <option value=""> Serbian  </option>
+    <option value=""> Macedonian </option>
+    <option value=""> ... </option>
+  <select>
+</div>
+
+<div class="selector">
+  <p> Target language </p>
+  <select>
+    <option value=""> German </option>
+    <option value=""> English </option>    
+    <option value=""> ... </option>
+  <select>
+</div>
+
+<div class="selector">
+  <p> Transcription system </p>
+  <select>
+    <option> SAMPA </option>
+    <option> pseudo-English </option>
+    <option> cyrphon </option>
+    <option> arabphon </option>
+  <select>
+</div>
+
+
+<table id="varpopulate" class="transtable"/> 
+
+<!-- <table id="jsonpopulate"  class="transtable"/> -->
+
+<!-- <button onclick="populateTable('serb1234','stan1234','cyrtrans')">pop</button> -->
+
+<div id="export"> export
+<ul>
+  <li> pdf </li>
+  <li> txt </li>
+  <li> odt </li>
+   <li> md </li>
+</ul>
+</div>
+ 
+</body>
+</html>
+
+
