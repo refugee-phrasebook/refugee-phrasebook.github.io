@@ -1,15 +1,116 @@
-{"data":[
-    {
-        "source" :       "здраво",
-        "target":   "Hallo",
-        "phonetic":     "хало",
-        "domain": "greeting"
+{"lexemes":[
+    {"ID":123,
+      "label":"GREETING, INFORMAL",      
+      "domain":"greetings",
+      "lgs":{
+	  "stan1234":
+	    {"label":"German",
+	      "isSource":false,
+	      "isTarget":true,
+	      "orthographic":"hallo",
+	      "transcriptions":{
+		"SAMPA":"halo",
+		"pseudoenglishallcapstrans":"HU-llo",
+		"cyrtrans":"хало",
+		"arabtrans":"هل"
+		}
+	    },
+	    "stan1236":
+	      {"label":"English",
+		"isSource":false,
+		"isTarget":true,
+		"orthographic":"hallo",
+		"transcriptions":{
+		  "SAMPA":"halo",
+		  "pseudoenglishallcapstrans":"HU-llo",
+		  "cyrtrans":"хало",
+		  "arabtrans":"هل"
+		  }
+	      },
+	   "serb1234":
+	    {"label":"Serbian",
+	      "isSource":true,
+	      "isTarget":false,
+	      "orthographic":"здраво"
+	    },
+	    "mace1235":
+	    {"label":"Macedonian",
+	      "isSource":true,
+	      "isTarget":false,
+	      "orthographic":"здраво"
+	  } 
+      }
     },
-    {
-        "source":       "Добар дан",
-        "target":   "Guten Morgen",
-        "phonetic":     "гутен морген",
-        "domain": "greeting"
+    {"ID":456,
+      "label":"GREETING, MORNING",
+      "lgs":{
+	"stan1234":
+	  {"label":"German",
+	    "isSource":false,
+	    "isTarget":true,
+	    "orthographic":"guten Tag",	  
+	    "transcriptions":{
+	      "SAMPA":"gu:t@n ta:k",
+	      "pseudoenglishallcapstrans":"GOO-tan TAHG",
+	      "cyrtrans":"гутен морген",
+	      "arabtrans":"جوتن مرج "
+	      }
+	  },
+	"serb1234":
+	  {"label":"Serbian",
+	    "isSource":true,
+	    "isTarget":false,
+	    "orthographic":"Добар дан"
+	  }, 
+	"mace1234":
+	  {"label":"Macedonian",
+	    "isSource":true,
+	    "isTarget":false,
+	    "orthographic":"Добар ден"
+	  } 
+      }
     }
-]
+  ]
+  ,
+  "languages":{
+    "serbian":{
+      "iso6393":"srb",
+      "glottocode":"serbi1235",
+      "label_de":"Serbisch",
+      "label_en":"Serbian",
+      "autonym":"српски",
+      "maincountry":"SRB",
+      "flag":"srb.png"
+    },
+    "macedonian":{
+      "iso6393":"mak",
+      "glottocode":"mace1235",
+      "label_de":"Mazedonisch",
+      "label_en":"Macedonian",
+      "autonym":"македонски",
+      "maincountry":"MAK",
+      "flag":"fyrom.png"
+    },
+    "german":{
+      "iso6393":"deu",
+      "glottocode":"stan1234",
+      "label_de":"Deutsch",
+      "label_en":"German",
+      "autonym":"Deutsch",
+      "maincountry":"ger",
+      "flag":"ger.png"
+    },
+    "english":{
+      "iso6393":"eng",
+      "glottocode":"stan1236",
+      "label_de":"Englisch",
+      "label_en":"English",
+      "autonym":"English",
+      "maincountry":"GBR",
+      "flag":"gbr.png"
+    }
+  },
+  "domains":[
+      "greetings", "food", "health", "hygiene"
+  ]
 }

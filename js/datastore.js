@@ -1,4 +1,4 @@
-function vardata(){
+function vardata(){ //this is a hack until we can populate the datatable via data.json
   return [   
     {
         "source" :       "здраво",
