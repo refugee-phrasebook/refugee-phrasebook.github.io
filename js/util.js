@@ -88,3 +88,16 @@ data:vardata(),
     ]
 } ); 
 }
+
+function updatetable(v){ 
+    $('#varpopulate').DataTable( {
+    destroy: true,
+    data:lgs[v](),
+	columns: [
+	    { data: 'source' },
+	    { data: 'target' },
+	    { data: 'phonetic' },
+	    { data: 'domain' }
+	]
+    } ); 
+    } 

@@ -1,7 +1,7 @@
 function vardata(){ //this is a hack until we can populate the datatable via data.json
   return [   
     {
-        "source" :       "здраво",
+        "source" :       "здраво", 
         "target":   "Hallo",
         "phonetic":     "хало",
         "domain": "greetings",
@@ -322,3 +322,5 @@ function vardata(){ //this is a hack until we can populate the datatable via dat
 
 ]
 }
+
+

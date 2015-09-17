@@ -14,22 +14,24 @@
 <!-- data-->
 <script type="text/javascript" charset="utf8" src="js/util.js"></script>
 <script type="text/javascript" charset="utf8" src="js/datastore.js"></script>
+<script type="text/javascript" charset="utf8" src="js/datasyr.js"></script>
 </head>
-<body>
-
+<body> 
 <div class="selector">
   <p> Source language </p>
-  <select>
-    <option value=""> Arabic  </option>
-    <option value=""> Serbian  </option>
-    <option value=""> Macedonian </option>
-    <option value=""> ... </option>
+  <select id="lgselector" onchange="updatetable(this.value)">
+    <option value="syr" > Arabic  </option>
+    <option value="srb"> Serbian  </option>
+<!--    <option value="syr" > <img src="./assets/imgs/syr.png"/>  </option>
+    <option value="srb"> <img src="./assets/imgs/syr.png"/>  </option>-->
+<!--    <option value=""> Macedonian </option>
+    <option value=""> ... </option>-->
   <select>
 </div>
 
 <div class="selector">
   <p> Target language </p>
-  <select>
+  <select disabled=disabled >
     <option value=""> German </option>
     <option value=""> English </option>    
     <option value=""> ... </option>
@@ -38,7 +40,7 @@
 
 <div class="selector">
   <p> Transcription system </p>
-  <select>
+  <select disabled=disabled >
     <option> SAMPA </option> <!--https://en.wikipedia.org/wiki/Speech_Assessment_Methods_Phonetic_Alphabet-->
     <option> pseudo-English </option> <!--https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key-->
     <option> cyrphon </option> <!-- use cyrillic letters in Balkan phonetic value to give the pronunciation -->
