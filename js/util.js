@@ -77,9 +77,9 @@ function populateTable (source, target, transcription){
 window.onload = function()      { 
 //load all known languages
 Object.keys(lgs).forEach(function(lg) {
-		console.log(lg)
+// 		console.log(lg)
 		s = '<option value="'+lg+'">'+lg+'</option>'
-		console.log(s)
+// 		console.log(s)
     $('#lgselector').append(s)
 });
 
@@ -93,6 +93,9 @@ data:lgs[Object.keys(lgs)[0]](),
         { data: 'domain' }
     ]
 } ); 
+
+v = $('#lgselector').children()[0].value 
+updatetable(v)
 }
 
 function updatetable(v){ 

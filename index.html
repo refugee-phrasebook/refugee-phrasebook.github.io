@@ -13,32 +13,30 @@
 
 <!-- data-->
 <script type="text/javascript" charset="utf8" src="js/datastore.js"></script>
-<script type="text/javascript" charset="utf8" src="js/datasyr.js"></script>
+<!-- <script type="text/javascript" charset="utf8" src="js/datasyr.js"></script> -->
 <script type="text/javascript" charset="utf8" src="js/util.js"></script>
 </head>
 <body> 
-<div class="selector">
-  <p> Source language </p>
+<div class="selector"> 
+<!--   <p> Source language </p> -->
   <select id="lgselector" onchange="updatetable(this.value)">
-    <option value="syr" > Arabic  </option>
-    <option value="srb"> Serbian  </option>
 <!--    <option value="syr" > <img src="./assets/imgs/syr.png"/>  </option>
     <option value="srb"> <img src="./assets/imgs/syr.png"/>  </option>-->
 <!--    <option value=""> Macedonian </option>
     <option value=""> ... </option>-->
   <select>
+-->
 </div>
 
 <div class="selector">
-  <p> Target language </p>
+<!--   <p> Target language </p> -->
   <select disabled=disabled >
     <option value=""> German </option>
-    <option value=""> English </option>    
-    <option value=""> ... </option>
+<!--     <option value=""> English </option>    -->
   <select>
 </div>
 
-<div class="selector">
+<div class="selector" style="display:none;	"> //temporarily disabled
   <p> Transcription system </p>
   <select disabled=disabled >
     <option> SAMPA </option> <!--https://en.wikipedia.org/wiki/Speech_Assessment_Methods_Phonetic_Alphabet-->
