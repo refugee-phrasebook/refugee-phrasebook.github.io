@@ -79,7 +79,7 @@ window.onload = function()      {
 
 
 $('#varpopulate').DataTable( {
-data:vardata(),
+data:lgs['syr'](),
     columns: [
         { data: 'source' },
         { data: 'target' },
