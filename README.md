@@ -6,3 +6,7 @@ To communicate about technical aspects of this project, join the [#refugee-phras
 
 ## Contributing
 To make changes to the repository, create a [pull request](https://help.github.com/articles/using-pull-requests). To write a message in a manner that you yourself will understand in six months' time, follow the conventions at [http://chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit).
+
+## Getting familiar with Git and GitHub
+New to version (or source) control, Git, or GitHub? Start by reading [Getting Started About Version Source Control](http://www.git-scm.com/book/en/v2/Getting-Started-About-Version-Control).
+
