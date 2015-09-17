@@ -74,12 +74,18 @@ function populateTable (source, target, transcription){
       })  
 }
 
-window.onload = function()      {
-// populateTable("serb1234","stan1234","cyrtrans")      ;
+window.onload = function()      { 
+//load all known languages
+Object.keys(lgs).forEach(function(lg) {
+		console.log(lg)
+		s = '<option value="'+lg+'">'+lg+'</option>'
+		console.log(s)
+    $('#lgselector').append(s)
+});
 
-
+// initialize table 
 $('#varpopulate').DataTable( {
-data:lgs['syr'](),
+data:lgs[Object.keys(lgs)[0]](),
     columns: [
         { data: 'source' },
         { data: 'target' },

@@ -2,9 +2,9 @@
 clear:both;
 width:100%;
 }
-
-#transtable tr.firstchild{
-background:red;
+ 
+#transtable td{
+    width:25%;
 }
 
 .even td{
