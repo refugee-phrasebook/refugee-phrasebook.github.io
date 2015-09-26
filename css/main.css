@@ -1,18 +1,20 @@
-#transtable{
+.transtable{
 clear:both;
-width:100%;
+/* width:100%; */
+/* max-width:600px; */
 }
  
-#transtable td{
+.transtable tbody tr td{
     width:25%;
 }
+ 
 
 .even td{
-  background:#eee;
+  background:#fefefe;
 }
 
 .odd td{
-  background:#ddd	;
+  background:#fafafa	;
 }
 
 #export ul li{
@@ -33,10 +35,27 @@ border-radius:1px;
 #languagechooser li{
 	display:inline-block;
 	list-style:none;
-	width:45%;
+/* 	width:45%; */
 }
 
 #languagechooser li a img{
 	border: 1px solid black; 
-	width:80%;
+	width:200px;
+	height:133px;
+}
+
+#languagechooser_small{
+	float:right;
+}
+
+#languagechooser_small li{
+	display:inline-block;
+	list-style:none;
+/* 	width:45%; */
+}
+
+#languagechooser_small li a img{
+	border: 1px solid black; 
+	width:20px;
+	height:13px;
 }
