@@ -1,0 +1,71 @@
+<html>
+<head>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="js/DataTables-1.10.9/media/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="js/DataTables-1.10.9/media/js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="js/DataTables-1.10.9/media/js/jquery.dataTables.js"></script>
+
+<!-- data-->
+<script type="text/javascript" charset="utf8" src="js/datastore.js"></script>
+<!-- <script type="text/javascript" charset="utf8" src="js/datasyr.js"></script> -->
+<script type="text/javascript" charset="utf8" src="js/util.js"></script>
+</head>
+<body> 
+<div class="selector"> 
+<!--   <p> Source language </p> -->
+  <select id="lgselector" onchange="updatetable(this.value)">
+<!--    <option value="syr" > <img src="./assets/imgs/syr.png"/>  </option>
+    <option value="srb"> <img src="./assets/imgs/syr.png"/>  </option>-->
+<!--    <option value=""> Macedonian </option>
+    <option value=""> ... </option>-->
+  <select>
+-->
+</div>
+
+<div class="selector">
+<!--   <p> Target language </p> -->
+  <select disabled=disabled >
+    <option value=""> German </option>
+<!--     <option value=""> English </option>    -->
+  <select>
+</div>
+
+<div class="selector" style="display:none;	"> //temporarily disabled
+  <p> Transcription system </p>
+  <select disabled=disabled >
+    <option> SAMPA </option> <!--https://en.wikipedia.org/wiki/Speech_Assessment_Methods_Phonetic_Alphabet-->
+    <option> pseudo-English </option> <!--https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key-->
+    <option> cyrphon </option> <!-- use cyrillic letters in Balkan phonetic value to give the pronunciation -->
+    <option> arabphon </option> <!-- use arabic letters in Syrian phonetic value to give the pronunciation -->
+    <option> persphon </option> <!-- use perso-arabic letters in Afghan phonetic value to give the pronunciation -->
+  <select>
+</div>
+
+
+<table id="varpopulate" class="transtable"/> 
+
+<!-- <table id="jsonpopulate"  class="transtable"/> -->
+
+<!-- <button onclick="populateTable('serb1234','stan1234','cyrtrans')">pop</button> -->
+
+<div id="export"> 
+<!-- export -->
+<!--<ul>
+  <li> pdf </li>
+  <li> txt </li>
+  <li> odt </li>
+   <li> md </li>
+</ul>-->
+&nbsp;
+</div>
+ 
+</body>
+</html>
+
+

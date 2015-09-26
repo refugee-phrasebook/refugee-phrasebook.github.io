@@ -29,3 +29,14 @@ border-radius:1px;
   display:inline-block;
   width:200px;
 }  
+
+#languagechooser li{
+	display:inline-block;
+	list-style:none;
+	width:45%;
+}
+
+#languagechooser li a img{
+	border: 1px solid black; 
+	width:80%;
+}
