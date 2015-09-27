@@ -1,1 +1,69 @@
-../base/index.html
+<html>
+<head>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="../js/DataTables-1.10.9/media/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/print.css" media="print" />  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.9/media/js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.9/media/js/jquery.dataTables.js"></script>
+
+<!-- data-->
+<script type="text/javascript" charset="utf8" src="js/datastore.js"></script> 
+
+<!-- local script -->
+<script type="text/javascript" charset="utf8" src="../js/util.js"></script>
+</head>
+
+<body> 
+
+
+<ul id="languagechooser_small" class="horizontal">
+ <li><a href="../eng"><img src="../assets/imgs/uk.png"/></a></li>
+ <li><a href="../hun"><img src="../assets/imgs/hu.png"/></a></li>
+ <li><a href="../deu"><img src="../assets/imgs/de.png"/></a></li>
+ <li><a href="../ell"><img src="../assets/imgs/el.png"/></a></li>
+</ul>
+
+<ul id="metalist" class="horizontal">
+ <li><a href=".."><img src="../assets/imgs/home.png"/></a></li>
+ <li><a href="https://github.com/refugee-phrasebook/refugee-phrasebook.github.io"><img src="../assets/imgs/github.png"/></a></li>
+ <li><a href="http://www.refugeephrasebook.de/"><img src="../assets/imgs/rpb.png"/></a></li>
+</ul>
+
+<div class="selector">  
+  <select id="lgselector" onchange="updatetable(this.value)">  <select>
+</div>
+ 
+
+<div class="selector" style="display:none;	">   
+  <p> Transcription system </p>
+  <select disabled=disabled >
+    <option> SAMPA </option> <!--https://en.wikipedia.org/wiki/Speech_Assessment_Methods_Phonetic_Alphabet-->
+    <option> pseudo-English </option> <!--https://en.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key-->
+    <option> cyrphon </option> <!-- use cyrillic letters in Balkan phonetic value to give the pronunciation -->
+    <option> arabphon </option> <!-- use arabic letters in Syrian phonetic value to give the pronunciation -->
+    <option> persphon </option> <!-- use perso-arabic letters in Afghan phonetic value to give the pronunciation -->
+  <select>
+</div>
+
+
+<table id="transtable" class="transtable"/>  <!--columns 3 and 4 disabled in css-->
+ 
+<!--<div id="export"> 
+  export 
+ <ul>
+  <li> pdf </li>
+  <li> txt </li>
+  <li> odt </li>
+   <li> md </li>
+</ul> 
+</div>-->
+ 
+</body>
+</html>
+
+
