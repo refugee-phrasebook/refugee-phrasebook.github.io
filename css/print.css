@@ -1,0 +1,35 @@
+#languagechooser_small,#metalist, #transtable_length, #transtable_filter, #transtable thead	{
+	display:none;
+}
+
+select{ 
+	border: 2px double gray;
+	width:90% !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+}
+#transtable{
+	border: 2px double gray;
+	width:90% !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#transtable td:nth-child(1),#transtable td:nth-child(2){
+/* 	width:30%; */
+}
+
+#transtable td:nth-child(3),#transtable td:nth-child(4){
+	width:0%;
+}
+
+#transtable tr{
+	border-bottom: 1px solid black;
+}
+
+#transtable td{
+	border-bottom: 1px dotted #eee;
+	font-size:200%;
+}

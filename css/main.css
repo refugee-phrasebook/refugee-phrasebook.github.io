@@ -38,23 +38,34 @@ border-radius:1px;
   width:200px;
 }  
 
-#languagechooser li{
-	display:inline-block;
-	list-style:none;
-/* 	width:45%; */
+#languagechooser{
+	margin-top:30px;
 }
 
-#languagechooser li a img{
+#languagechooser  img{
 	border: 1px solid black; 
-	width:200px;
-	height:133px;
+	width:100%;
+/* 	height:133px; */
+}
+
+#languagechooser_small, #metalist{
+/* 	float:right; */
+	height:24px;
+	position: absolute;
+	top:3px;
+	margin:0px;
 }
 
 #languagechooser_small{
-	float:right;
+	right:10px;
 }
 
-#languagechooser_small li{
+#metalist{
+	right:130px;
+}
+
+
+.horizontal li{
 	display:inline-block;
 	list-style:none;
 /* 	width:45%; */
@@ -64,4 +75,8 @@ border-radius:1px;
 	border: 1px solid black; 
 	width:20px;
 	height:13px;
+}
+
+#metalist img{
+	width:24px;
 }

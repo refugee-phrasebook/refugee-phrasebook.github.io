@@ -27,7 +27,8 @@ function updatetable(v){
     $('#transtable').DataTable( {
     destroy: true,
     data:lgs[v](),
-    pageLength:100,
+    pageLength:100, 
+		lengthMenu:[10, 25, 50, 75, 100, 500],
 	columns: [
 	    { data: 'source' },
 	    { data: 'target' },
