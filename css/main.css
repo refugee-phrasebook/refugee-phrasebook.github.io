@@ -99,7 +99,7 @@ width: 200px;
 }
 
 #transtable_filter label::after{
-content:url("https://upload.wikimedia.org/wikipedia/commons/a/ad/WV_in_review.svg")
+/* content:url("https://upload.wikimedia.org/wikipedia/commons/a/ad/WV_in_review.svg") */
 }
 
 #transtable_filter label{
