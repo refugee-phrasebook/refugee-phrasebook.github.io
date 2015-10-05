@@ -34,12 +34,25 @@ border-radius:1px;
 }
 
 .selector{
-  display:inline-block;
+}
+
+#transtable_length{
+  top:-40px;
+  
+}
+
+.selector, #transtable_length{
+/*   display:inline-block; */
   width:200px;
+  position:absolute;
+  right:20px;
+  color:white;
+  font-size:1%;
+  text-align:right;
+  
 }  
 
 #languagechooser{
-	margin-top:30px;
 }
 
 #languagechooser  img{
@@ -48,20 +61,18 @@ border-radius:1px;
 /* 	height:133px; */
 }
 
-#languagechooser_small, #metalist{
-/* 	float:right; */
-	height:24px;
-	position: absolute;
-	top:3px;
-	margin:0px;
-}
 
 #languagechooser_small{
-	right:10px;
+width:150px;
+/* position:absolute; */
+top:40px;
 }
 
 #metalist{
-	right:130px;
+width:150px;
+/* position:absolute; */
+top:40px;
+	
 }
 
 
@@ -79,4 +90,42 @@ border-radius:1px;
 
 #metalist img{
 	width:24px;
+}
+
+
+#transtable_filter label input{
+font-size:200%;
+width: 200px;
+}
+
+#transtable_filter label::after{
+content:url("https://upload.wikimedia.org/wikipedia/commons/a/ad/WV_in_review.svg")
+}
+
+#transtable_filter label{
+color:white;
+width:300px;
+ 
+}
+
+#transtable_filter{
+
+left:30%;
+position:absolute;
+top: -50px;
+width:400px;
+
+}
+
+#transtable_wrapper{
+/*position:absolute;
+top:100px;*/
+
+}
+
+.topclass{
+/*   position:absolute; */
+  top:0px;
+  padding-top:5px;
+  margin:5px;
 }

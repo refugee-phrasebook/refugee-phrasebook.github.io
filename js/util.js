@@ -27,13 +27,14 @@ function updatetable(v){
     $('#transtable').DataTable( {
     destroy: true,
     data:lgs[v](),
+    language:{ "url": "../assets/notext.json"},       
     pageLength:100, 
-		lengthMenu:[10, 25, 50, 75, 100, 500],
-	columns: [
-	    { data: 'source' },
-	    { data: 'target' },
-	    { data: 'phonetic' },
-	    { data: 'domain' }
-	]
+    lengthMenu:[10, 25, 50, 75, 100, 500],
+    columns: [
+	{ data: 'source' },
+	{ data: 'target' },
+	{ data: 'phonetic' },
+	{ data: 'domain' }
+      ]
     } ); 
     } 
