@@ -1,5 +1,10 @@
 # refugee-phrasebook.github.io
-This repository contains automation tools to create an open-source phrasebook to address the language needs of refugees.
+This repository contains a web application to browse phrasebook data. Currently, the target languages English, German, Greek and Hungarian are supported. Supported source languages are Arabic, Dari, Pahsto, Kurdish, Bosnian, Macedonian.
+
+See http://refugee-phrasebook.github.io/
+
+This repository contains the frontend and the data. The backend import routines are found on https://github.com/refugee-phrasebook/py_rpb
+
 
 ## Communicating
 To communicate about technical aspects of this project, join the [#refugee-phrasebook IRC channel on OFTC](http://webchat.oftc.net/?channels=refugee-phrasebook).
