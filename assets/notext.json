@@ -6,10 +6,10 @@
     "sInfoFiltered": "(max _MAX_)",
     "sInfoPostFix": "",
     "sInfoThousands": ".",
-    "sLengthMenu": "_MENU_ Einträge anzeigen",
+    "sLengthMenu": "_MENU_ ",
     "sLoadingRecords": "...",
     "sProcessing": "...",
-    "sSearch": "Suchen",
+    "sSearch": "",
     "sZeroRecords": "0",
     "oPaginate": 
 
