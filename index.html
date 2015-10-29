@@ -1,32 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title></title>
 </head>
+
 <body>
+  <ul id="metalist" class="horizontal">
+    <li><a href=".."><img src="./assets/imgs/home.png"></a></li>
 
-<ul id="metalist" class="horizontal">
- <li><a href=".."><img src="./assets/imgs/home.png"/></a></li>
- <li><a href="https://github.com/refugee-phrasebook/refugee-phrasebook.github.io"><img src="./assets/imgs/github.png"/></a></li>
- <li><a href="http://www.refugeephrasebook.de/"><img src="./assets/imgs/rpb.png"/></a></li>
-</ul>
+    <li><a href="https://github.com/refugee-phrasebook/refugee-phrasebook.github.io"><img src="./assets/imgs/github.png"></a></li>
 
-<table id="languagechooser">
- <tr>
-  <td><a href="./eng"><img src="./assets/imgs/uk.png"/></a> </td>
-  <td> <a href="./hun"><img src="./assets/imgs/hu.png"/></a> </td>
- </tr>
- <tr>
-  <td><a href="./deu"><img src="./assets/imgs/de.png"/></a> </td>
-  <td><a href="./ell"><img src="./assets/imgs/el.png"/></a> </td>
- </tr>
-</table>
-
-<!--<ul id="languagechooser" class="horizontal">
+    <li><a href="http://www.refugeephrasebook.de/"><img src="./assets/imgs/rpb.png"></a></li>
+  </ul><!--<ul id="languagechooser" class="horizontal">
  <li><a href="./eng"><img src="./assets/imgs/uk.png"/></a></li>
  <li><a href="./hun"><img src="./assets/imgs/hu.png"/></a></li>
  <li><a href="./deu"><img src="./assets/imgs/de.png"/></a></li>
  <li><a href="./ell"><img src="./assets/imgs/el.png"/></a></li>
 </ul>-->
 
+  <h2>online version</h2>
+
+  <table id="languagechooser">
+    <tr>
+      <td><a href="./eng"><img src="./assets/imgs/uk.png"></a></td>
+
+      <td><a href="./hun"><img src="./assets/imgs/hu.png"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="./deu"><img src="./assets/imgs/de.png"></a></td>
+
+      <td><a href="./ell"><img src="./assets/imgs/el.png"></a></td>
+    </tr>
+  </table>
+
+  <h2>generate custom paper version</h2>
+
+  <div id="customselectors">
+    <div id="sourcechooser" class="chooser">
+        <!--<fieldset>-->
+
+          <ul>
+            <li> <input type="radio" name="source">Syrian Arabic</li>
+
+            <li> <input type="radio" name="source">Dari </li>
+
+            <li> <input type="radio" name="source">Pashto </li>
+
+            <li> <input type="radio" name="source">Russian </li>
+
+            <li> <input type="radio" name="source">Serbian </li>
+
+            <li> <input type="radio" name="source">Tigrinya</li>
+          </ul>
+        <!--</fieldset>-->
+    </div>
+
+    <div id="targetchooser" class="chooser">
+        <!--<fieldset>-->
+          <ul>
+            <li><input type="radio" name="target"><img src="./assets/imgs/de.png"></li>
+
+            <li><input type="radio" name="target"><img src="./assets/imgs/uk.png"></li>
+
+            <li><input type="radio" name="target"><img src="./assets/imgs/el.png"></li>
+
+            <li><input type="radio" name="target"><img src="./assets/imgs/hu.png"></li>
+          </ul>
+        <!--</fieldset>-->
+    </div>
+
+    <div id="transcriptionchooser"  class="chooser">
+      <!--<fieldset>-->
+        <ul>
+          <li><input type="radio" name="transcription"><label>IPA</label></li>
+
+          <li><input type="radio" name="transcription">SAMPA</li>
+
+          <li><input type="radio" name="transcription">cyriltrans</li>
+
+          <li><input type="radio" name="transcription">arabtrans</li>
+        </ul>
+      <!--</fieldset>-->
+    </div>
+
+    <div id="domainchooser"  class="chooser">
+      <ul>
+        <li><input type="checkbox">politeness</li>
+
+        <li><input type="checkbox">hygiene</li>
+
+        <li><input type="checkbox">food</li>
+
+        <li><input type="checkbox">transport</li>
+
+        <li><input type="checkbox">clothing</li>
+
+        <li><input type="checkbox">kin</li>
+
+        <li><input type="checkbox">humans</li>
+
+        <li><input type="checkbox">adjectives</li>
+
+        <li><input type="checkbox">basics</li>
+
+        <li><input type="checkbox">activities</li>
+
+        <li><input type="checkbox">politics</li>
+
+        <li><input type="checkbox">geography</li>
+
+        <li><input type="checkbox">time</li>
+
+        <li><input type="checkbox">health</li>
+
+        <li><input type="checkbox">medicalmeasures</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>

@@ -57,7 +57,7 @@ border-radius:1px;
 
 #languagechooser  img{
 	border: 1px solid black; 
-	width:100%;
+	width:20%;
 /* 	height:133px; */
 }
 
@@ -89,7 +89,11 @@ top:40px;
 }
 
 #metalist img{
-	width:24px;
+        width:24px;
+}
+
+#targetchooser img{
+        width:24px;
 }
 
 
@@ -128,4 +132,14 @@ top:100px;*/
   top:0px;
   padding-top:5px;
   margin:5px;
+}
+
+#customselectors .chooser{
+display:inline-block;
+width:20%;
+float:left;
+}
+
+#customselectors li{
+list-style:none;
 }
