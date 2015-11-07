@@ -35,6 +35,8 @@ border-radius:1px;
 }
 
 .selector{
+  display:inline;
+/*   width:25%; */
 }
 
 #transtable_length{
@@ -42,7 +44,7 @@ border-radius:1px;
   
 }
 
-.selector, #transtable_length{
+#transtable_length{
 /*   display:inline-block; */
   width:200px;
   position:absolute;
@@ -70,7 +72,7 @@ top:40px;
 }
 
 #metalist{
-width:150px;
+width:100%;
 /* position:absolute; */
 top:40px;
 	
