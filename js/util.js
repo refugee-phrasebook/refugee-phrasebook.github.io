@@ -54,8 +54,14 @@ iso6393dic ={ //should be given by json, not hardcoded  FIXME
 "apc":"Syrian Arabic", 
 "nld":"Dutch"} 
 
+keys=[]
 $.each( iso6393dic, function( key, value ) { 
-    option = '<option value="'+key+'">'+value+'</option>'
+    keys.push(key);
+})
+keys.sort();
+
+$.each( keys, function( key ) { 
+    option = '<option value="'+keys[key]+'">'+iso6393dic[keys[key]]+'</option>'
     $("#sourceselector").append(option)
     $("#targetselector").append(option)
 });
