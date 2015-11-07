@@ -8,11 +8,11 @@ clear:both;
 /*     width:25%; */
 }
   
-.transtable td:nth-child(3), .transtable td:nth-child(4){ 
+/*.transtable td:nth-child(3), .transtable td:nth-child(4){ 
 		border:1px solid red;
 		display:none;
 		width:1%;
-}
+}*/
  
 
 .even td{
