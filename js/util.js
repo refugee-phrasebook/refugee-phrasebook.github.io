@@ -34,7 +34,7 @@ function updatetable(src,target,phon){
 function json2jsdatatables(source,target,trans){
 //  console.log(source,target,trans)
     //return array of arrays [ID, src,target,phonetic, domain]
-  var lexemesjson = $.getJSON("./data/lexemes.json");
+  var lexemesjson = $.getJSON("../data/lexemes.json");
   alert("currently, only German and Arabic are displayed. An interactive version will follow soon")
 //   console.log(1)
 //   console.log(lexemesjson.responseText)
