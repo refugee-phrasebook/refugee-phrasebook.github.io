@@ -143,3 +143,15 @@ float:left;
 #customselectors li{
 list-style:none;
 }
+
+
+table.dataTable thead .sorting{
+    background-position:left !important;
+}
+
+.selectedrow{
+}
+
+.deselectedrow{
+  opacity:.5;
+}

@@ -52,12 +52,10 @@ function json2jsdatatables(source,target,trans){
     key = keys[i]
 //     console.log(key)
     var lexeme = lexemes[key]
-    console.log(lexeme)
-    ID = lexeme['ID']
-    console.log(ID)
-    
+//     console.log(lexeme)
     ID = i
     i++
+//     console.log(ID)
 //     console.log(source)
 //     console.log(target)
 //     console.log(lexeme.lgs)
@@ -75,7 +73,7 @@ function json2jsdatatables(source,target,trans){
         targetpos=j
       }
     }
-//     console.log(sourcepos,targetpos)
+    console.log(sourcepos,targetpos)
 //     console.log(lexeme.lgs[1])
 //     console.log(lexeme.lgs.deu)
 //     console.log(lexeme.lgs['deu'])
@@ -93,3 +91,8 @@ function json2jsdatatables(source,target,trans){
   }
   return result
 }
+
+
+$('tr').on('click',function(){
+ $(this).class('') 
+})
