@@ -7,7 +7,7 @@ window.onload = function(){
 
   //set table to first language in selection
 //   v = $('#lgselector').children()[0].value 
-  updatetable('spa','deu','SAMPA')
+  updatetable('apc','deu','arabtrans')
 }
 
  
@@ -53,8 +53,10 @@ function json2jsdatatables(source,target,trans){
 //     console.log(key)
     var lexeme = lexemes[key]
 //     console.log(lexeme)
-    ID = i
-    i++
+console.log(lexeme.ID)
+ID = lexeme.ID
+//     ID = i
+//     i++
 //     console.log(ID)
 //     console.log(source)
 //     console.log(target)
