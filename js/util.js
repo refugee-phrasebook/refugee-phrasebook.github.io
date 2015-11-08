@@ -1,12 +1,4 @@
-window.onload = function(){  
-  //load all known languages
-// //   Object.keys(lgs).forEach(function(lg) { 
-// //                   s = '<option value="'+lg+'">'+lg+'</option>' 
-// //       $('#lgselector').append(s)
-// //   });
-
-  //set table to first language in selection
-//   v = $('#lgselector').children()[0].value 
+window.onload = function(){   
 
  
 iso6393dic ={ //should be given by json, not hardcoded  FIXME
@@ -75,9 +67,9 @@ $.each( keys, function( key ) {
     json2jsdatatables(srcvalue,targetvalue,transcriptionvalue)
   });
   
-  $( ".selector" ).change()
- 
-//   json2jsdatatables("apc","deu","arabtrans")
+  $( ".selector" ).change() //trigger initialization
+  
+
 }
 
  
@@ -164,5 +156,20 @@ function json2jsdatatables(source,target,trans){
         { data: 'domain' }
       ]
     } ); 
+    alert("you can include and exclude rows from printing by clicking on them (Firefox only)")
+    $('tr').click(function() {
+        toggleselected($(this))
+    });  
+ 
+  
   }) 
+}
+
+function toggleselected(el){
+    if ( $(el).hasClass( "deselectedrow" ) == true){
+      $(el).removeClass("deselectedrow" ) 
+    }
+    else{
+      $(el).addClass("deselectedrow" ) 
+    }
 }

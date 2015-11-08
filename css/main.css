@@ -157,6 +157,8 @@ table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTabl
 .selectedrow{
 }
 
-.deselectedrow{
-  opacity:.5;
+.deselectedrow td{
+  opacity:.2;
+  font-size:60%;
+  background:#FFdddd;
 }
