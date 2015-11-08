@@ -162,3 +162,7 @@ table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTabl
   font-size:60%;
   background:#FFdddd;
 }
+
+td{
+  cursor:pointer;
+}

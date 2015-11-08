@@ -143,23 +143,28 @@ function json2jsdatatables(source,target,trans){
     }
     data2 = result
     $('#transtable').DataTable( {
-    destroy: true,
-    data:data2,
-    language:{ "url": "./assets/notext.json"},       
-    pageLength:100, 
-    lengthMenu:[10, 25, 50, 75, 100, 500],
-    columns: [
-        { data: 'ID' },
-        { data: 'source' },
-        { data: 'target' },
-        { data: 'phonetic' },
-        { data: 'domain' }
-      ]
-    } ); 
-    alert("you can include and exclude rows from printing by clicking on them (Firefox only)")
-    $('tr').click(function() {
-        toggleselected($(this))
-    });  
+        destroy: true,
+        data:data2,
+        language:{ "url": "./assets/notext.json"},       
+        pageLength:100, 
+        lengthMenu:[10, 25, 50, 75, 100, 500],
+        columns: [
+            { data: 'ID' },
+            { data: 'source' },
+            { data: 'target' },
+            { data: 'phonetic' },
+            { data: 'domain' }
+          ],
+      initComplete: function(settings, json) {
+        console.log(2)
+        $('tr').click(function() {
+          toggleselected($(this))
+        });  
+        console.log(3)        
+      }
+    } );  
+    
+
  
   
   }) 
