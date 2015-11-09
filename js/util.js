@@ -73,16 +73,16 @@ window.onload = function(){
     
 function json2jsdatatables(source,target,trans){ 
   //return array of arrays [ID, src,target,phonetic, domain]
-  var lexemesjson;
-  $.getJSON("./data/lexemes.json" , function( data ) {  
-    lexemes = data  
-    result = []
+//   var lexemesjson;
+  $.getJSON("./data/lexemes.json" , function( lexemes ) {  
+//     lexemes = data  
+    tuples = []
     keys = Object.keys(lexemes) 
     i = 0 
     for (var i=0;i<keys.length;i++){
       key = keys[i] 
       var lexeme = lexemes[key] 
-  ID = lexeme.ID 
+      ID = lexeme.ID 
       keys2 = Object.keys(lexeme['lgs']) 
       var targetpos = false
       var sourcepos = false
@@ -98,12 +98,12 @@ function json2jsdatatables(source,target,trans){
       targetstring = lexeme['lgs'][Object.keys(lexeme['lgs'])[targetpos]]['orthographic']
       transcription =  lexeme['lgs'][Object.keys(lexeme['lgs'])[targetpos]]['transcriptions'][trans]
       domain = lexeme['domain']
-      result.push({'ID':ID,'source':sourcestring,'target':targetstring,'phonetic':transcription,'domain':domain})
+      tuples.push({'ID':ID,'source':sourcestring,'target':targetstring,'phonetic':transcription,'domain':domain})
     }
-    data2 = result
+//     data2 = result
     $('#transtable').DataTable( {
         destroy: true,
-        data:data2,
+        data:tuples,
         language:{ "url": "./assets/notext.json"},       
         pageLength:100, 
         lengthMenu:[10, 25, 50, 75, 100, 500],
@@ -119,11 +119,7 @@ function json2jsdatatables(source,target,trans){
           toggleselected($(this))
         });        
       }
-    } );  
-    
-
- 
-  
+    });   
   }) 
 }
 
