@@ -95,31 +95,40 @@ function json2jsdatatables(source,target,trans){
         }
       } 
       sourcestring = lexeme['lgs'][Object.keys(lexeme['lgs'])[sourcepos]]['orthographic']
+      if (sourcestring.trim() === ''){continue}
       targetstring = lexeme['lgs'][Object.keys(lexeme['lgs'])[targetpos]]['orthographic']
+      if (targetstring.trim() === ''){continue}
       transcription =  lexeme['lgs'][Object.keys(lexeme['lgs'])[targetpos]]['transcriptions'][trans]
       domain = lexeme['domain']
       tuples.push({'ID':ID,'source':sourcestring,'target':targetstring,'phonetic':transcription,'domain':domain})
     }
 //     data2 = result
-    $('#transtable').DataTable( {
+    table = $('#transtable').DataTable( {
         destroy: true,
         data:tuples,
         language:{ "url": "./assets/notext.json"},       
         pageLength:100, 
-        lengthMenu:[10, 25, 50, 75, 100, 500],
+        lengthMenu:[10, 25, 50, 75, 100, 500], 
         columns: [
-            { data: 'ID' },
             { data: 'source' },
             { data: 'target' },
             { data: 'phonetic' },
-            { data: 'domain' }
+            { data: 'domain' },
+            { data: 'ID' }
           ],
       initComplete: function(settings, json) { 
+        
+//         table.column( 0 ).visible( true ); 
+//         table.column( 1 ).visible( true ); 
+//         table.column( 2 ).visible( true ); 
+//         table.column( 3 ).visible( true ); 
+        table.column( 4 ).visible( false ); 
+        table.columns.adjust().draw( true ); 
         $('tr').click(function() {
           toggleselected($(this))
-        });        
+        });   
       }
-    });   
+    });    
   }) 
 }
 
