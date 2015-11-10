@@ -40,6 +40,10 @@ select{
  display:none;
 }
 
+.transtable td{
+  width:30%;
+}
+
 /* do not print id and domain */
 .transtable td:nth-child(4),.transtable td:nth-child(5){ 
 display:none; 
